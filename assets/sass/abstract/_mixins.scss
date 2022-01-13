@@ -1,0 +1,18 @@
+ // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+@mixin for-phone-media {
+    @media (max-width: $phone-view) {
+        @content;
+    }
+}
+@mixin for-tablet-media {
+    @media (max-width: $tablet-view) {
+        @content;
+    }
+}
+@mixin for-tablet-media-up {
+    @media (min-width: $tablet-view) {
+        @content;
+    }
+}

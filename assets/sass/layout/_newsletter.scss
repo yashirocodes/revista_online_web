@@ -1,0 +1,56 @@
+//PAGE START | NEWSLETTER
+/*-| NEWSLETTER PAGE |-*/
+
+.newsletter {
+    text-align: center;
+  width: 100%;
+  height: 20rem;
+  background-color: $carskill;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: $x-large;
+  }
+  &__text {
+      letter-spacing: 0.2rem;
+      margin: 0.5rem;
+  }
+}
+//INPUT NEWSLETTER
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    background: $mercury;
+    color: $chambray;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: $carskill;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -15,12 +15,16 @@
 <body>
   <!-- NAVBAR MENU -->
   <nav class="nav">
-    <div class="nav__logo"><h1 class="nav__text">The Daily Dose </h1></div>
+    <div class="nav__logo">
+      
+      <p class="nav__text">The Daily Dose </p>
+      <p class="nav__text-acronym">TDD</p>
+    </div>
+    
     <div class="nav__link">
       <ul class="nav__ul">
         <li class="nav__li"><a href="#" class="nav__a">Nosotros</a></li>
         <li class="nav__li"><a href="#" class="nav__a">Contacto</a></li>
-        </li>
       </ul>
       <form class="search" action="action_page.php">
         <input class="search__input" type="text" placeholder="Buscar ..." name="search" />
@@ -138,10 +142,7 @@
         <button class="card__button">Read more</button>
       </div>
     </div>
-    <!-- END CARD MAIN CONTENT -->
-  </main>
-  <!-- END OF MAIN CONTENT -->
-  <!-- ASIDE CONTENT  -->
+     <!-- ASIDE CONTENT  -->
   <aside class="aside-container">
     <section class="about-us">
       <h5 class="about-us__title">Sobre Nosotros</h5>
@@ -150,36 +151,44 @@
         laudantium assumenda repudiandae quibusdam, dolorem quaerat.
       </p>
     </section>
+    <div class="aside-container__line"></div>
     <section class="tags">
-      <h5 class="tags__title">Tags</h5>
+      <h6 class="tags__title">Tags</h6>
       <section class="tags__container">
-        <span class="tags__text"></span>
-        <span class="tags__text"></span>
-        <span class="tags__text"></span>
+        <span class="tags__text">Politics</span>
+        <span class="tags__text">Worlds</span>
+        <span class="tags__text">Breaking News</span>
       </section>
     </section>
+    <div class="aside-container__line"></div>
     <section class="featured">
       <h2 class="features__title">Destacados</h2>
       <div class="card-mini">
         <p class="card-mini__title">Lorem ipsum dolor sit amet.</p>
-        <img src="https://via.placeholder.com/300" alt="">
+        <img class="card-mini__img" src="https://via.placeholder.com/300" alt="">
       </div>
       <div class="card-mini">
         <p class="card-mini__title">Lorem ipsum dolor sit amet.</p>
-        <img src="https://via.placeholder.com/300" alt="">
+        <img class="card-mini__img" src="https://via.placeholder.com/300" alt="">
       </div>
       <div class="card-mini">
         <p class="card-mini__title">Lorem ipsum dolor sit amet.</p>
-        <img src="https://via.placeholder.com/300" alt="">
+        <img class="card-mini__img" src="https://via.placeholder.com/300" alt="">
       </div>
     </section>
   </aside>
   <!-- END OF ASIDE CONTENT -->
+    <!-- END CARD MAIN CONTENT -->
+  </main>
+  <!-- END OF MAIN CONTENT -->
   <!-- START NEWSLETTER -->
   <section class="newsletter">
     <h2 class="newsletter__title">Lorem ipsum dolor sit amet consectetur.</h2>
     <p class="newsletter__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eum pariatur! Id.</p>
-    <input class="newsletter__input" type="text">
+    <form class="example">
+      <input type="text" placeholder="Ingresa tu correo." name="search">
+      <button type="submit"><i class="fa fa-rss"></i></button>
+    </form>
   </section>
   <!-- END NEWSLETTER -->
   <!-- START FOOTER -->

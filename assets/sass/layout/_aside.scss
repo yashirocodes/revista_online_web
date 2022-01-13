@@ -1,0 +1,78 @@
+//PAGE START
+/*PAGE START | ASIDE*/
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  @include for-tablet-media{
+    display: none;
+  }
+  &__line{
+      width: 100%;
+      height: 0.2rem;
+      background-color: $chambray;
+      margin: 1rem 0;
+  }
+}
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        text-align: center;
+        font-size: $x-large;
+        font-weight: bold;
+    }
+  &__description {
+      text-align: justify;
+      padding: 1rem;
+  }
+}
+.card-mini {
+    background-color: $carskill;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+  &__title {
+      font-weight: lighter;
+      padding: 1rem 0;
+  }
+  &__img{
+      object-fit: cover;
+      border-radius: 1rem;
+      padding: 1rem;
+
+  }
+}
+.features {
+    width: 100%;
+  &__title {
+      font-size: $x-large;
+      text-align: center;
+  }
+}
+.tags {
+    &__title {
+        font-size: $x-large;
+        text-align: center;
+    }
+  &__container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      
+  }
+  &__text {
+    padding: 0.2rem 0.5rem;
+    margin: 0.5rem 1rem;
+    border: 1px solid $chambray;
+    background: $kashmr;
+    color:$athens-gray;
+    border-radius: 0.6rem;
+    font-size: $small;
+  }
+}

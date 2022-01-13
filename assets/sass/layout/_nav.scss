@@ -5,6 +5,28 @@
     height: 5rem;
     background-color: azure;
     display: flex;
+    
+    @include for-tablet-media{
+        .nav{
+            &__text{
+                display: none;
+            }
+            &__text-acronym{
+                font-family: $eugusto;
+        letter-spacing: 0.3rem;
+        font-size: $large;
+        font-weight: bolder;
+            }
+        }
+    }
+    @include for-tablet-media-up{
+        .nav{
+           
+            &__text-acronym{
+               display: none;
+            }
+        }
+    }
     &__logo {
         width: 25%;
         height: 100%;
