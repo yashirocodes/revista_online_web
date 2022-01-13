@@ -2,6 +2,9 @@
 /*|- Start GRID page configuration -|*/
 
 .container{
+    @include for-desktop-media{
+        width: 75%;
+    }
     @include for-tablet-media{
         width: 100%;
     }

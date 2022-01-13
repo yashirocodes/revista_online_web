@@ -145,6 +145,11 @@ body {
   align-items: center;
   width: 20%;
 }
+@media (max-width: 1200px) {
+  .aside-container {
+    width: 25%;
+  }
+}
 @media (max-width: 768px) {
   .aside-container {
     display: none;
@@ -367,6 +372,11 @@ form.example::after {
   gap: 0.5rem;
   grid-auto-rows: 28rem;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 75%;
+  }
 }
 @media (max-width: 768px) {
   .container {

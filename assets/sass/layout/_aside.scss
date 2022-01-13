@@ -5,6 +5,9 @@
   flex-direction: column;
   align-items: center;
   width: 20%;
+  @include for-desktop-media{
+    width: 25%;
+}
   @include for-tablet-media{
     display: none;
   }

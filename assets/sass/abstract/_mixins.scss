@@ -16,3 +16,9 @@
         @content;
     }
 }
+
+@mixin for-desktop-media{
+    @media (max-width: $desktop-view) {
+        @content;
+    }
+}
