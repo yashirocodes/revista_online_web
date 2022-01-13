@@ -1,0 +1,41 @@
+//Start card component stylesheet
+/*|- START CARD COMPONENT STYLESHEET -|*/
+ 
+.card {
+  background-color: $carskill;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem 1.5rem;
+  &__img {
+    width: 100%;
+    border-radius: 0.2rem;
+    height: 10rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  &__tag {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid $chambray;
+    background: $kashmr;
+    color:$athens-gray;
+    border-radius: 0.6rem;
+    font-size: $small;
+  }
+  &__title {
+    font-size: $large;
+    font-weight: $bold;
+    margin-top: 0.5rem;
+  }
+  &__description {
+    margin-top: 0.5rem;
+    line-height: 1.3rem;
+  }
+  &__button {
+    padding: 0.4rem 1rem;
+    margin-top: 0.5rem;
+    background: none;
+    border: 1px solid $chambray;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+}

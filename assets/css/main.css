@@ -1,0 +1,150 @@
+/*-| START MANIFESTO PAGE |-*/
+/*|- Start GRID page configuration -|*/
+.container {
+  width: 80%;
+  display: grid;
+  grid-auto-flow: dense;
+  gap: 2rem;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+/*VARIABLES PAGE*/
+/*BASE PAGE START*/
+/*|- GENERAL RESET -|*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*|- TYPOGRAFY -|*/
+/*FONT IMPORT*/
+@font-face {
+  font-family: "eugusto";
+  src: url(../fonts/eugusto_font.otf) format("opentype");
+}
+@font-face {
+  font-family: "monograf";
+  src: url(../fonts/monograf_regular.ttf) format("truetype");
+  src: url(../fonts/monograf_bold.ttf) format("truetype");
+}
+/*SIZE*/
+body {
+  font-family: "monograf";
+}
+
+/*|- NAVIGATOR PAGE -|*/
+.nav {
+  width: 100%;
+  height: 5rem;
+  background-color: azure;
+  display: flex;
+}
+.nav__logo {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__text {
+  font-family: "eugusto", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+.nav__link {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav__ul {
+  display: flex;
+}
+.nav__li {
+  list-style: none;
+  margin-right: 1rem;
+}
+.nav__a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/*|- START CARD COMPONENT STYLESHEET -|*/
+.card {
+  background-color: #EEF6F7;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem 1.5rem;
+}
+.card__img {
+  width: 100%;
+  border-radius: 0.2rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.card__tag {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #3D518C;
+  background: #4F6196;
+  color: #F8F9FA;
+  border-radius: 0.6rem;
+  font-size: 0.75rem;
+}
+.card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.card__description {
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+}
+.card__button {
+  padding: 0.4rem 1rem;
+  margin-top: 0.5rem;
+  background: none;
+  border: 1px solid #3D518C;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+/* Style the search field */
+.search__input[type=text] {
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  border: 1px solid #4F6196;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+  border-radius: 1rem 0 0 1rem;
+}
+.search__input[type=text]:focus {
+  outline: none;
+}
+
+/* Style the submit button */
+.search__button {
+  float: left;
+  width: 20%;
+  padding: 0.2rem;
+  background: #E5E5E5;
+  color: #3D518C;
+  font-size: 0.75rem;
+  border: 1px solid #4F6196;
+  border-radius: 0 1rem 1rem 0;
+  border-left: none;
+  cursor: pointer;
+}
+.search__button:hover {
+  background: #F8F9FA;
+}
+.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*# sourceMappingURL=main.css.map */

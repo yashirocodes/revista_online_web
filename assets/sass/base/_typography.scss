@@ -1,0 +1,37 @@
+//START PAGE | TYPOGRAPHY
+/*|- TYPOGRAFY -|*/
+
+//FONT FAMILY
+//FONT IMPORTS
+/*FONT IMPORT*/
+
+// |- E G U S T O  -|
+@font-face {
+    font-family: 'eugusto';
+    src: url(../fonts/eugusto_font.otf) format('opentype');
+}
+$eugusto :"eugusto", sans-serif;
+
+// |-  -|
+@font-face {
+    font-family: 'monograf';
+    src: url(../fonts/monograf_regular.ttf) format('truetype');
+    src: url(../fonts/monograf_bold.ttf) format('truetype');
+}
+$monograf :"monograf";
+//FONT SIZE
+/*SIZE*/
+$xx-large: 2.375rem;
+$x-large: 1.775rem;
+$large: 1.200rem;
+$medium: 1rem;
+$small: 0.75rem;
+
+// FONT WEIGHT
+$regular : 400;
+$bold : 700;
+
+//BODY 
+body{
+    font-family: $monograf;
+  }

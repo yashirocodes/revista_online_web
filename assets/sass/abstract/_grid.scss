@@ -1,0 +1,11 @@
+//Start to GRID page
+/*|- Start GRID page configuration -|*/
+
+.container{
+    width: 80%;
+    display: grid;
+    grid-auto-flow: dense;
+    gap: 2rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
